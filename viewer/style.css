@@ -1,0 +1,6 @@
+div#line-chart {
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 1200px;
+    max-height: 800px;
+}
