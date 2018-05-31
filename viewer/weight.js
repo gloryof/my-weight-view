@@ -3,10 +3,7 @@
  */
 class MeasuredWeight {
     constructor(measuringYear, measuringMonth, measuringDay, weight) {
-        var date = new Date();
-        date.setYear(measuringYear);
-        date.setMonth(measuringMonth - 1);
-        date.setDate(measuringDay);
+        var date = new Date(measuringYear, measuringMonth - 1, measuringDay);
         date.setHours(0);
         date.setMinutes(0);
         date.setSeconds(0);
