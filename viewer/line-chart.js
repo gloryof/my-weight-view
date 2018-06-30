@@ -48,7 +48,7 @@ class SummarizedLineChart {
                 labels: this.results.getSummarizedDate().map(dateFormat),
                 datasets: [
                     {
-                        label: "体重",
+                        label: "月平均体重",
                         fill: false,
                         backgroundColor: chartColor,
 					              borderColor: chartColor,
