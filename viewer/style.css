@@ -1,4 +1,4 @@
-div#line-chart {
+div.chart-area {
     min-width: 500px;
     min-height: 500px;
     max-width: 1200px;

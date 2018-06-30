@@ -8,17 +8,27 @@
     </head>
     <body>
         <main>
-            <div id="line-chart">
-                <canvas class="chart"></canvas>
-            </div>
+            <section>
+              <div id="detail-chart" class="chart-area">
+                  <canvas class="chart"></canvas>
+              </div>              
+            </section>
+            <section>
+              <div id="summarized-chart" class="chart-area">
+                  <canvas class="chart"></canvas>
+              </div>              
+            </section>
         </main>
+        <script src="chart-options.js"></script>
         <script src="weight.js"></script>
         <script src="measured-data.js"></script>
         <script src="line-chart.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
         <script>
-          var lineChart = new LineChart("line-chart", results);
-          lineChart.load();
+          var detailChart = new DetailLineChart("detail-chart", results);
+          var summarizedChart = new SummarizedLineChart("summarized-chart", results);
+          detailChart.load();
+          summarizedChart.load();
         </script>
     </body>
 </html>
